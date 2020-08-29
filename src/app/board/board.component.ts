@@ -20,6 +20,10 @@ export class BoardComponent implements OnInit {
   repo: Repo[];
   users: User[];
 
+  loading = false;
+  errorMessage;
+  windowScrolled: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
