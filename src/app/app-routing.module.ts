@@ -13,6 +13,7 @@ const routes: Routes = [{path: 'board', component: BoardComponent }];
   ],
 
   
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: []
 })
 export class AppRoutingModule { }
