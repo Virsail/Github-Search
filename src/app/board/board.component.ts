@@ -51,6 +51,20 @@ export class BoardComponent implements OnInit {
 
     public getRepos(event: any) {
       this.loading = true;
+
+      let promise = new Promise((resolve , reject) => {
+        this.githubService.getRepos (this.userName).toPromise().then(response => {
+          this.repo = response; this.loading = false; // this will push all data to array [repo]
+           resolve();
+         },
+         error => {
+           this.errorMessage = 'An error was encountered';
+           this.loading = false;
+         }
+       );
+       });
+       return promise;
+     }
   ngOnInit(): void {
   }
 
