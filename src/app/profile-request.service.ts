@@ -14,3 +14,9 @@ export class ProfileRequestService {
 
   constructor(private http: HttpClient) { }
 }
+getUsers(userName: string): Observable<user[]> {
+  return this.http.get<user[]>(this.fromURL + '/users/' + userName);
+
+}
+
+}
