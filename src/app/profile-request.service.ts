@@ -12,5 +12,5 @@ export class ProfileRequestService {
 
   fromURL: string = 'https://api.github.com';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 }
