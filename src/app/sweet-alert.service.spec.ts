@@ -11,6 +11,7 @@ describe('SweetAlertService', () => {
   });
 
   it('should be created', () => {
+    const service: SweetAlertService = TestBed.get(SweetAlertService);
     expect(service).toBeTruthy();
   });
 });
