@@ -27,8 +27,10 @@ const routes: Routes = [
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
-
+    RouterModule.forRoot(routes),
+    GithubService,
+    ProfileRequestService,
+    SweetAlertService
 
   ],
   providers: [],
