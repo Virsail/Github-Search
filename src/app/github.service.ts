@@ -10,5 +10,5 @@ import {environment} from '../environments/environment';
 export class GithubService {
   baseURL: string = 'https://api.github.com';
 
-  constructor() { }
+  constructor( constructor(private http: HttpClient) { }
 }
