@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './board/board.component';
 import { GithubService } from './github.service';
+import {ProfileRequestService} from './profile-request.service';
 
 @NgModule({
   declarations: [
