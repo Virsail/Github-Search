@@ -7,7 +7,12 @@ import { BoardComponent } from './board/board.component';
 const routes: Routes = [{path: 'board', component: BoardComponent }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+
+  
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
