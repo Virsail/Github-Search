@@ -10,11 +10,11 @@ export class ProfileRequestService {
 
   fromURL: string = 'https://api.github.com';
 
-  constructor(private http: HttpClient) { }
-}
-getUsers(userName: string): Observable<user[]> {
-  return this.http.get<user[]>(this.fromURL + '/users/' + userName);
+  constructor(private http: HttpClient) {
 
-}
+   }
 
+   getUsers(userName: string): Observable<User[]> {
+    return this.http.get<User[]>(this.fromURL + '/users/' + userName);
+}
 }

@@ -17,3 +17,4 @@ export class GithubService {
   getRepos(userName: string): Observable<Repo[]> {
     return this.http.get<Repo[]>(this.baseURL + '/users/' + userName + '/repos');
 }
+}
