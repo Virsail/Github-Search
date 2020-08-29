@@ -10,5 +10,10 @@ import {environment} from '../environments/environment';
 export class GithubService {
   baseURL: string = 'https://api.github.com';
 
-  constructor( constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+
+  }
+
+  getRepos(userName: string): Observable<Repo[]> {
+    return this.http.get<Repo[]>(this.baseURL + '/users/' + userName + '/repos');
 }
