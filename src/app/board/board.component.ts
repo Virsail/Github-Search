@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable} from 'rxjs';
+import { Repo} from '../repo';
 
 @Component({
   selector: 'app-board',
