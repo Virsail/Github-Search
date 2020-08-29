@@ -11,6 +11,7 @@ import { BoardComponent } from './board/board.component';
 import { GithubService } from './github.service';
 import {ProfileRequestService} from './profile-request.service';
 import { RouterModule, Routes } from '@angular/router';
+import { SweetAlertService } from './sweet-alert.service';
 
 @NgModule({
   declarations: [
