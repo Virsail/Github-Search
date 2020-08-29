@@ -16,6 +16,10 @@ import { User } from '../user';
 })
 export class BoardComponent implements OnInit {
 
+  userName = 'virsail-mbagaya';
+  repo: Repo[];
+  users: User[];
+
   constructor() { }
 
   ngOnInit(): void {
