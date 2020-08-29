@@ -3,4 +3,5 @@ export class User {
     avatar_url: any;
     followers_url: number;
     following_url: number;
+    repos_url: string;
 }
