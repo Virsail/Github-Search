@@ -25,6 +25,10 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes)
+
 
   ],
   providers: [],
