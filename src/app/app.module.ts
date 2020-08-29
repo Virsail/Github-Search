@@ -14,7 +14,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SweetAlertService } from './sweet-alert.service';
 
 const routes: Routes = [
-  {path: 'dashboard', component: DashboardComponent }
+  {path: 'board', component:BoardComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
