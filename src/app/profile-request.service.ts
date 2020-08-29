@@ -10,5 +10,7 @@ import {environment} from '../environments/environment';
 })
 export class ProfileRequestService {
 
+  fromURL: string = 'https://api.github.com';
+
   constructor() { }
 }
