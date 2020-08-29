@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './board/board.component';
+import { GithubService } from './github.service';
 
 @NgModule({
   declarations: [
