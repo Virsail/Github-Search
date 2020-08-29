@@ -2,6 +2,7 @@ import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { Observable} from 'rxjs';
 import { Repo} from '../repo';
 import { GithubService } from '../github.service';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-board',
