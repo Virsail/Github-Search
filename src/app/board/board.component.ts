@@ -4,7 +4,9 @@ import { Repo} from '../repo';
 import { GithubService } from '../github.service';
 import {environment} from '../../environments/environment';
 import {ProfileRequestService} from '../profile-request.service';
+
 import { User } from '../user';
+
 
 
 
@@ -24,7 +26,18 @@ export class BoardComponent implements OnInit {
   errorMessage;
   windowScrolled: boolean;
 
-  constructor() { }
+  constructor(private githubService: GithubService, private profileRequestservice: ProfileRequestService) { 
+
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+          this.windowScrolled = true;
+      } else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+          this.windowScrolled = false;
+      }
+  }
 
   ngOnInit(): void {
   }
