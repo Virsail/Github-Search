@@ -49,6 +49,8 @@ export class BoardComponent implements OnInit {
         })();
     }
 
+    public getRepos(event: any) {
+      this.loading = true;
   ngOnInit(): void {
   }
 
