@@ -8,6 +8,7 @@ import {environment} from '../environments/environment';
   providedIn: 'root'
 })
 export class GithubService {
+  baseURL: string = 'https://api.github.com';
 
   constructor() { }
 }

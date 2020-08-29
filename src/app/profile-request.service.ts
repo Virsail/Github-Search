@@ -5,9 +5,7 @@ import { Observable } from 'rxjs';
 import { User } from './user';
 import {environment} from '../environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProfileRequestService {
 
   fromURL: string = 'https://api.github.com';
