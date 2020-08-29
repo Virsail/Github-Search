@@ -11,6 +11,7 @@ describe('ProfileRequestService', () => {
   });
 
   it('should be created', () => {
+    const service: ProfileRequestService = TestBed.get(ProfileRequestService);
     expect(service).toBeTruthy();
   });
 });
