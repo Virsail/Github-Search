@@ -11,7 +11,8 @@ import { User } from '../user';
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.css']
+  styleUrls: ['./board.component.css'],
+  providers: [ GithubService, ProfileRequestService ]
 })
 export class BoardComponent implements OnInit {
 
