@@ -5,6 +5,7 @@ import { GithubService } from '../github.service';
 import {environment} from '../../environments/environment';
 import {ProfileRequestService} from '../profile-request.service';
 
+
 import { User } from '../user';
 
 
@@ -26,7 +27,7 @@ export class BoardComponent implements OnInit {
   errorMessage;
   windowScrolled: boolean;
 
-  constructor(private githubService: GithubService, private profileRequestservice: ProfileRequestService) { 
+  constructor(private githubService: GithubService, private profileRequest: ProfileRequestService) { 
 
   }
 
@@ -65,6 +66,24 @@ export class BoardComponent implements OnInit {
        });
        return promise;
      }
+
+     public getUsers(event: any) {
+      this.loading = true;
+
+      let promise = new Promise((resolve , reject) => {
+        this.profileRequest.getUsers(this.userName).toPromise().then(response => {
+          this.users = response; this.loading = false; // this will push all data to array [repo]
+           resolve();
+         },
+         error => {
+           this.errorMessage = 'An error was encountered';
+           this.loading = false;
+         }
+       );
+       });
+       return promise;
+     }
+     
   ngOnInit(): void {
   }
 
