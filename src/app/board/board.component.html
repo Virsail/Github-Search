@@ -58,6 +58,11 @@
                   ">Search on Github <i class="fas fa-id-card"></i></h2>
                   
                 </h3>
+                <div class="mb-4" >
+                    <!-- Search form -->
+                  <input class="form-control" name="userName" type="text" (keyup)='getUsers($event)' [(ngModel)]="userName"placeholder="Search" aria-label="Search">
+                  
+                  </div>
               </div>
               </div>
               </div>
