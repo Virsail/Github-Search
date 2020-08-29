@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { Observable} from 'rxjs';
 import { Repo} from '../repo';
 
