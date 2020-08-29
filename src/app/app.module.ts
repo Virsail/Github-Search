@@ -13,6 +13,8 @@ import {ProfileRequestService} from './profile-request.service';
 import { RouterModule, Routes } from '@angular/router';
 import { SweetAlertService } from './sweet-alert.service';
 
+const routes: Routes = [
+  {path: 'dashboard', component: DashboardComponent }
 @NgModule({
   declarations: [
     AppComponent,
