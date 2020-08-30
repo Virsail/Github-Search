@@ -102,5 +102,25 @@
             <div class="col-md-6 mb-4">
               <!-- card start -->
               <!-- Card -->
+              <div class="card">
+                <!-- Card content -->
+                <div class="card-body">
+              
+                  <!-- Title -->
+                  <h4 class="card-title animated fadeInRight" ><p class="text-info"> G-Tracer Found: {{users.login}}</p></h4>
+                  <div *ngIf="loading"> <h3>loading  <i class="fas fa-spinner animated rotateIn infinite "></i></h3></div>
+                  <hr>
+                  <!-- Text -->
+                  <ul class=" card-text list-group list-group-flush">
+                      <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: {{users.followers}}</li>
+            
+                      <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: {{users.following}}</li>
+            
+                      <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos: {{users.public_repos}}</li>
+            
+                      <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on: {{users.created_at|date}}</li>
+                    </ul>
+                </div>
+                <!-- Card footer -->
             
         
