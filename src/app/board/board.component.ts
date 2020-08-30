@@ -1,19 +1,18 @@
 
-   import { Observable} from 'rxjs/Rx';
+   import { Observable} from 'rxjs';
    import { repos} from '../repos';
    import { Component, OnInit, Inject, HostListener } from '@angular/core';
    import { GithubService } from '../github.service';
    import { environment } from '../../environments/environment';
    import {ProfileRequestService} from '../profile-request.service';
    import { user } from '../user';
-   import { SweetAlertService } from 'angular-sweetalert-service';
    import { DOCUMENT } from '@angular/platform-browser';
    
    @Component({
      selector: 'app-board',
      templateUrl: './board.component.html',
      styleUrls: ['./board.component.css'],
-     providers: [ GithubService, ProfileRequestService, SweetAlertService]
+     providers: [ GithubService, ProfileRequestService ]
    })
    export class BoardComponent implements OnInit {
      userName = 'peter-wachira';
@@ -24,7 +23,7 @@
      errorMessage;
      windowScrolled: boolean;
      // tslint:disable-next-line:max-line-length
-     constructor( private githubService: GithubService, private profileRequest: ProfileRequestService, private alertService: SweetAlertService, @Inject(DOCUMENT) private document: Document ) {
+     constructor( private githubService: GithubService, private profileRequest: ProfileRequestService, @Inject(DOCUMENT) private document: Document ) {
      }
      @HostListener('window:scroll', [])
      onWindowScroll() {

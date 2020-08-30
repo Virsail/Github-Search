@@ -1,19 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {RouterModule, Routes} from '@angular/router';
-import { BoardComponent } from './board/board.component';
+import { Routes, RouterModule } from '@angular/router';
 
-// Defining routes
-const routes: Routes = [
-    {path: 'dashboard', component: BoardComponent }
-  ];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule],
-  declarations: []
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
