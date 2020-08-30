@@ -1,6 +1,10 @@
 export class user {
-showInfo: boolean;
-  constructor(public created_at:string,public avatar_url:any,public followers_url:number,public following_url:number,public repos_url:string, public login:number,public public_repos:string){
-      this.showInfo=false;
-    }
+  created_at: string;
+  avatar_url: any;
+  followers_url: number;
+  following_url: number;
+  repos_url: string;
+  login: number;
+  public_repos: string;
+ //  created_at: string;
 }
