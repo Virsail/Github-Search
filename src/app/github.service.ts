@@ -4,7 +4,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { repos } from './repos';
 import {environment} from '../environments/environment';
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 
 
 

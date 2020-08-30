@@ -25,7 +25,7 @@
      errorMessage;
      windowScrolled: boolean;
      // tslint:disable-next-line:max-line-length
-     constructor( private githubService: GithubService, private profileRequest: ProfileRequestService, ) {
+     constructor( private githubService: GithubService, private profileRequest: ProfileRequestService ) {
      }
      @HostListener('window:scroll', [])
      onWindowScroll() {
