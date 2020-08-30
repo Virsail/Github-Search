@@ -4,7 +4,7 @@
 
       <!-- Brand -->
       <a class="navbar-brand" href="#" target="_blank">
-        <strong>G-Tracer </strong>
+        <strong>Github Home </strong>
       </a>
 
       <!-- Collapse -->
@@ -29,18 +29,18 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a href="https://www.facebook.com/" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f"></i><em>Facebook</em>
             </a>
           </li>
           <li class="nav-item">
             <a href="https://twitter.com/" class="nav-link" target="_blank">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter"></i><em>Twitter</em>
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://github.com/peter-wachira/" class="nav-link border border-light rounded"
+            <a href="https://github.com/virsail/" class="nav-link border border-light rounded"
               target="_blank">
-              <i class="fab fa-github mr-2"></i>GitHub
+              <i class="fab fa-github mr-2"></i><em>GitHub</em>
             </a>
           </li>
         </ul>
@@ -89,12 +89,12 @@
               
               </div>
               <div class="mb-4">
-              <a target="_blank" class="btn btn-outline-white btn-lg text-info" type="button"  (click)="getUsers()" >Find User 
+              <a target="_blank" class="btn btn-outline-white btn-lg text-info" type="button">Find User 
                 <i class="fas fa-search ml-2 animated wobble infinite"></i>
               </a>
             </div>
             <div class="form-group mb-4">
-              <a target="_blank" class="btn btn-outline-white btn-lg text-info" type="button" (click)="getRepos()" > Show Repos 
+              <a target="_blank" class="btn btn-outline-white btn-lg text-info" type="button"> Show Repos 
                 <i class="fas fa-search ml-2 animated wobble infinite"></i>
               </a>
             </div>
@@ -121,7 +121,7 @@
 
           <!--Grid column-->
           <div class="col-md-6 mb-4">
-            <img src='{{users.avatar_url}}' class="img-fluid z-depth-1-half" alt="">
+            <img src='' class="img-fluid z-depth-1-half" alt="">
           </div>
           <!--Grid column-->
 
@@ -134,36 +134,36 @@
     <div class="card-body">
   
       <!-- Title -->
-      <h4 class="card-title animated fadeInRight" ><p class="text-info"> G-Tracer Found: {{users.login}}</p></h4>
+      <h4 class="card-title animated fadeInRight" ><p class="text-info"> G-Tracer Found: </p></h4>
       <div *ngIf="loading"> <h3>loading  <i class="fas fa-spinner animated rotateIn infinite "></i></h3></div>
       <hr>
       <!-- Text -->
       <ul class=" card-text list-group list-group-flush">
-          <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: {{users.followers}}</li>
+          <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: </li>
 
-          <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: {{users.following}}</li>
+          <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: </li>
 
-          <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos: {{users.public_repos}}</li>
+          <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos:</li>
 
-          <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on: {{users.created_at|date}}</li>
+          <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on: </li>
         </ul>
     </div>
     <!-- Card footer -->
     <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
       <ul class="list-unstyled list-inline font-small">
 
-        <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-user-friends"></i> {{users.followers}}</a></li>
+        <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-user-friends"></i></a></li>
 
-        <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-users f0c0"></i> {{users.following}}</a></li>
+        <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-users f0c0"></i></a></li>
         
-        <li class="list-inline-item"><a href="#" class="white-text"><i class="far fa-clock pr-1"></i> {{users.created_at|date}}</a></li>
+        <li class="list-inline-item"><a href="#" class="white-text"><i class="far fa-clock pr-1"></i></a></li>
       </ul>
     </div>
   </div>
   <!-- Card -->
             <!-- card end -->
             <!-- CTA -->
-            <a target="_blank" href="{{users.html_url}}" class="btn btn-grey btn-md">  Checkout on Github
+            <a target="_blank" href="" class="btn btn-grey btn-md">  Checkout on Github
               <i class="fas fa-fighter-jet"></i>
             </a>
           </div>
@@ -231,11 +231,11 @@
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
     <!--Call to action-->
-    <div class="pt-4 scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}" >
-      <a class="btn btn-outline-white" href="#" role="button" >Scroll to Top
+    <div class="pt-4 scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+      <a class="btn btn-outline-white" href="#" role="button" >Scroll to Top 
         <i class="fas fa-arrow-up"></i>
       </a>
-      <a class="btn btn-outline-white"  href="https://github.com/peter-wachira/" target="_blank" role="button">Visit on Github
+      <a class="btn btn-outline-white"  href="https://github.com/virsail/" target="_blank" role="button">Visit on Github
         <i class="fas fa-rocket"></i>
       </a>
     </div>
@@ -281,8 +281,8 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="#" target="_blank"> Peter Wachira </a>
+      © 2020 mbagaya
+      <a href="#" target="_blank">  </a>
     </div>
     <!--/.Copyright-->
 

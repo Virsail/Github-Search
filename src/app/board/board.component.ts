@@ -16,9 +16,10 @@
      providers: [ GithubService, ProfileRequestService ]
    })
    export class BoardComponent implements OnInit {
-     userName = 'peter-wachira';
+     userName = 'Virsail-Mbagaya';
      repos: repos[];
      users: user[];
+     
    
      loading = false;
      errorMessage;
