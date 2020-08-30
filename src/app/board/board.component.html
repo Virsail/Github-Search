@@ -52,24 +52,22 @@
             <source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" >
           </video>
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
             <div class="text-center  mx-5 wow fadeIn">
-                <h3 class="mb-4">
-                  <h2 class="h2 text-info mb-3 animated bounce infinite">Search on Github <i class="fas fa-id-card"></i></h2>
-                  
-                </h3>
+              <h3 class="mb-4">
+                <h2 class="h2 text-info mb-3 animated bounce infinite
+                ">Search on Github <i class="fas fa-id-card"></i></h2>
+                
+              </h3>
+              <div class="mb-4" >
+                <input class="form-control" name="userName" type="text" (keyup)='getUsers($event)' [(ngModel)]="userName"placeholder="Search" aria-label="Search">
               
-                <div class="mb-4" >
-                    <!-- Search form -->
-                  <input class="form-control" name="userName" type="text" (keyup)='getUsers($event)' [(ngModel)]="userName"placeholder="Search" aria-label="Search">
-                  
-                  </div>
               </div>
-
-              </div>
-              </div>
-              </div>
-              </div>
-              </div>
-
+              <div class="mb-4">
+                <a target="_blank" class="btn btn-outline-white btn-lg text-info" type="button"  (click)="getUsers()" >Find User 
+                  <i class="fas fa-search ml-2 animated wobble infinite"></i>
+                </a>
+         
             
         
