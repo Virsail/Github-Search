@@ -21,7 +21,7 @@ export class BoardComponent implements OnInit {
 
   userName = 'virsail-mbagaya';
   repo: Repo[];
-  users: User[];
+  User: User[];
 
   loading = false;
   errorMessage;
@@ -72,7 +72,7 @@ export class BoardComponent implements OnInit {
 
       let promise = new Promise((resolve , reject) => {
         this.profileRequest.getUsers(this.userName).toPromise().then(response => {
-          this.users = response; this.loading = false; // this will push all data to array [repo]
+          this.User = response; this.loading = false; // this will push all data to array [repo]
            resolve();
          },
          error => {
