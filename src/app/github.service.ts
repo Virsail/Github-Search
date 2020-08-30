@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Repo } from './repo';
+// tslint:disable-next-line:import-blacklist
+import { Observable } from 'rxjs/Rx';
+import { repos } from './repos';
 import {environment} from '../environments/environment';
+@Injectable()
 
-@Injectable({
-  providedIn: 'root'
-})
+
+
 export class GithubService {
-  baseURL: string = ' 966cf13ed72dc160aa6aa53c1991a1a408425a35';
 
-  constructor(private http: HttpClient) { 
-
+  // tslint:disable-next-line:no-inferrable-types
+  baseURL: string = '966cf13ed72dc160aa6aa53c1991a1a408425a35';
+  constructor(private http: HttpClient) {
   }
 
-  getRepos(userName: string): Observable<Repo[]> {
-    return this.http.get<Repo[]>(this.baseURL + '/users/' + userName + '/repos');
-}
+  getRepos(userName: string): Observable<repos[]> {
+       return this.http.get<repos[]>(this.baseURL + '/users/' + userName + '/repos');
+  }
 }

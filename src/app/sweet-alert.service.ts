@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { User } from './user';
+// tslint:disable-next-line:import-blacklist
+import { Observable } from 'rxjs/Rx';
+import { user } from './user';
 import {environment} from '../environments/environment';
-@Injectable()
 
+@Injectable()
 export declare class SweetAlertService {
   constructor();
   swal(): any;
@@ -17,8 +18,3 @@ export declare class SweetAlertService {
   error(options: any): any;
   info(options: any): any;
 }
-
-
-
-
-

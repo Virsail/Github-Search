@@ -1,4 +1,4 @@
-export class User {
+export class user {
     created_at: string;
     avatar_url: any;
     followers_url: number;
@@ -6,4 +6,5 @@ export class User {
     repos_url: string;
     login: number;
     public_repos: string;
+   //  created_at: string;
 }

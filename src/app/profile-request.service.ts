@@ -1,20 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-
-import { User } from './user';
+// tslint:disable-next-line:import-blacklist
+import { Observable } from 'rxjs/Rx';
+import { user } from './user';
 import {environment} from '../environments/environment';
 
 @Injectable()
+
 export class ProfileRequestService {
 
-  fromURL: string = ' 966cf13ed72dc160aa6aa53c1991a1a408425a35';
 
+  // tslint:disable-next-line:no-inferrable-types
+  fromURL: string = '966cf13ed72dc160aa6aa53c1991a1a408425a35';
   constructor(private http: HttpClient) {
+  }
 
-   }
+  getUsers(userName: string): Observable<user[]> {
+    return this.http.get<user[]>(this.fromURL + '/users/' + userName);
 
-   getUsers(userName: string): Observable<User[]> {
-    return this.http.get<User[]>(this.fromURL + '/users/' + userName);
 }
+
 }
