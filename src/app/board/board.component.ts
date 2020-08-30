@@ -10,21 +10,14 @@
    
    @Component({
      selector: 'app-board',
-     templateUrl: '.board.component.html',
+     templateUrl: './board.component.html',
      styleUrls: ['./board.component.css'],
      providers: [ GithubService, ProfileRequestService ]
    })
    export class BoardComponent implements OnInit {
      userName = 'peter-wachira';
      repos: repos[];
-     users: user[ 'created_at, avatar_url, followers_url, following_url, repos_url, login, public_repos,'],
-      'created_at: string;
-      avatar_url: any;
-      followers_url: number;
-      following_url: number;
-      repos_url: string;
-      login: number;
-      public_repos: string;];
+     users: user[];
    
      loading = false;
      errorMessage;
