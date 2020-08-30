@@ -1,11 +1,12 @@
 
-   import { Observable} from 'rxjs';
+   import { Observable, from} from 'rxjs';
    import { repos} from '../repos';
    import { Component, OnInit, Inject, HostListener } from '@angular/core';
    import { GithubService } from '../github.service';
    import { environment } from '../../environments/environment';
    import {ProfileRequestService} from '../profile-request.service';
    import { user } from '../user';
+   
   
    
    @Component({
