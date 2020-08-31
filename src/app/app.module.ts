@@ -1,40 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { SearchRequestService} from './search-request.service';
 
 import { AppComponent } from './app.component';
-
-
-import { FormsModule } from '@angular/forms';
 import { BoardComponent } from './board/board.component';
-import { HttpClientModule } from '@angular/common/http';
-import { GithubService } from './github.service';
-import {ProfileRequestService} from './profile-request.service';
-import { RouterModule, Routes } from '@angular/router';
-import { SweetAlertService } from './sweet-alert.service';
-import { UpperCasePipe } from './upper-case.pipe';
+import { RepositoriesComponent } from './repositories/repositories.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { RouterModule } from '@angular/router';
+import { RoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { UpperCasePipe } from './upper-case.pipe';
+import { FooterComponent } from './footer/footer.component';
+import { HighlightDirective } from './highlight.directive';
 
-const routes: Routes = [
-  {path: 'board', component: BoardComponent }
-];
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     BoardComponent,
-    UpperCasePipe,
+    RepositoriesComponent,
     SearchFormComponent,
+    UserInfoComponent,
+    UpperCasePipe,
+    FooterComponent,
+    HighlightDirective,
+
+    
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    RoutingModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
+  
 
   ],
-  // providers: [ GithubService, ProfileRequestService],
-
+  providers: [SearchRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

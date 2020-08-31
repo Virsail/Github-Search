@@ -1,6 +1,42 @@
-<div style="height: 100vh">
+<div style="height: 120vh">
     <app-board></app-board> 
   </div>
+  <div class="jam">
+  <div class="navbar-dark">
+    <a class="nav-link" routerLink="/users" routerLinkActive="active"><p style="text-align: center;">Users</p></a>
+    
+  </div>
+  </div>
+  <router-outlet></router-outlet>
+<div class="twend">
+  <h1>My Github Home Custom  Directive</h1>
+
+  <h4>Pick a highlight color</h4>
+  <div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+  </div>
+  <p [appHighlight]="color">Highlight me I'm Github the platform that hosts your code show some love here!</p>
+  
+  <p [appHighlight]="color" defaultColor="violet">
+    Highlight me too I'm git ,the tool that helps you build your code show some love !
+  </p>
+  
+  <hr>
+  <p><i>Mouse over the following lines to see fixed highlights</i></p>
+  
+  <p [appHighlight]="'yellow'">Angular is dope</p>
+  <p appHighlight="orange">Admit you love Angular</p>
+
+</div>
+    
+
+
+  <app-footer></app-footer>
+
+  
+
   
 
   

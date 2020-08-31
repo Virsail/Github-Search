@@ -1,24 +1,25 @@
 input {
-    width: 100%;
+    width: 50%;
    padding: 12px;
    border: 1px solid #ccc;
-   border-radius: 4px;
+   border-radius: 2px;
    box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
+   margin-top: 4px;
+   margin-bottom: 8px;
+   overflow-x: hidden;
 }
 
 
 input[type=submit] {
-   background-color: #056b5b;
-   color: white;
+   background-color:grey;
+   color: grey;
    text-align: center;
    /* width: 50%; */
 }
 
 
 button {
-   background-color:blue;
+   background-color:grey;
    color: white;
    padding: 14px 20px;
    margin: 8px 0;
@@ -31,8 +32,38 @@ button {
 
 
 form {
-   background-color: rosybrown;
+   background-color: blue;
    padding: 20px;
    width: 100vh;
     /*height: 100%; */
 }
+
+
+
+
+
+.form-control{
+   color: black;
+   background: transparent;
+   font-weight: 570;
+ }
+ 
+ .heading{
+   color: white;
+   text-align: center;
+   padding-top: 2%;
+ }
+ .container-fluid{
+   background-color:#1C2331;
+   border-radius: 4px;
+   padding-bottom: 5%;
+   box-shadow: 2px 2px 3px 2px blue;
+   font-family: 'Roboto', Arial, sans-serif;
+   margin-bottom: 5%;
+ }
+
+
+ body {
+    
+    overflow-x: hidden;
+ }

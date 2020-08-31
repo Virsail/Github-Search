@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl : 'https://api.github.com/users/daneden?access_token=' + '966cf13ed72dc160aa6aa53c1991a1a408425a35'
+  miApi:'966cf13ed72dc160aa6aa53c1991a1a408425a35'
 };
 
 /*

@@ -2,3 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "@fortawesome/fontawesome-free/css/all.css"; 
 
+body {
+    overflow-x: hidden;
+    color: white;
+}

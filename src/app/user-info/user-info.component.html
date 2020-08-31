@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-md-12">
+      <app-search-form (getName)='findUser($event)'></app-search-form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="table table-striped table-bordered">
+        <h3>{{users.name}}</h3>
+        <table class="table table-striped table-light">
+          <tbody>
+            <tr>
+              <th scope="row">Github Home found:</th>
+              <td>
+                <a href="{{users.html_url}}" target="_blank">{{users.login}}</a> 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"> <i class="fas fa-folder-open"></i> Repositories:</th>
+              <td>  <i class="fas fa-folder-open"></i> {{users.public_repos }}</td>
+            </tr>
+            <tr>
+              <th scope="row">  <i class="far fa-clock pr-1"></i> Date created:</th>
+              <td>  <i class="far fa-clock pr-1"></i>{{users.created_at | date}}</td>
+            </tr>
+            <tr>
+              <th scope="row"> <i class="fas fa-user-friends"></i>Followers:</th>
+              <td><i class="fas fa-user-friends"></i> {{users.followers}}</td>
+            </tr>
+            <tr>
+              <th scope="row"> <i class="fas fa-users f0c0"></i> Following</th>
+              <td> <i class="fas fa-users f0c0"></i>{{users.following}}</td>
+            </tr>
+            <div class="rot">
+            <a target="_blank" href="{{users.html_url}}" class="btn btn-grey btn-md">  Checkout on Github
+              <i class="fas fa-fighter-jet"></i>
+            </a>
+            </div>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-5 image-start">
+      <img src="{{users.avatar_url}}">
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container">
+  <div class="row">
+    <div  class="col-md-12">
+      <!-- <h2 style="color: #056b5b" > User Repositories</h2> -->
+      <div class="table table-striped">
+        <table class="table">
+          <tbody>
+            <tr *ngFor='let repository of userRepos.newRepository'>
+              <td>
+                <a href="{{repository.html_url}}" target="_blank" >{{repository.name}}</a><br>
+                  <p class="desc">Description: {{repository.description}}</p><br>
+                  <p>Date Created: {{repository.created_at | date}}</p>
+              </td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
