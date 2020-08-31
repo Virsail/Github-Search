@@ -43,7 +43,7 @@ To get more help on the Angular CLI use `ng help`
 
 * git clone ``````
 
-* cd Esma 
+* cd Github Search
 
 *  open editor code . or atom . based on the text editor you have.
 
