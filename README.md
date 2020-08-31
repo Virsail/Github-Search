@@ -58,15 +58,13 @@ To get more help on the Angular CLI use `ng help`
 *Javascript 
 
 BDD
-- This application is built on Angular Cli , user gets to input a quote and add it to the list of quotes ,quote details get displayed in a card-form on the right of the container class 
-- Quotes can be deleted ,upvoted ,downvoted and contain a custom pipe that shows how much time  has passed since submission of the quote.
+- This application is built on Angular Cli , user gets to input Github user name and see the profile together with the public repositories available on the user account hosted on Github.
+- This website includes a custom made pipe that sets The font to Upper case , a custom directive also that changes the behavior of the DOM(Document Object Model)elements ,,the custom directive highlights certain texts on the website landing page.
 
 
 
 ## Contact Information 
-BDD
-- This application is built on Angular Cli , user gets to input a quote and add it to the list of quotes ,quote details get displayed in a card-form on the right of the container class 
-- Quotes can be deleted ,upvoted ,downvoted and contain a custom pipe that shows how much time  has passed since submission of the quote.
+Find me on @Ericmbagaya@gmail.com
 
 
 
