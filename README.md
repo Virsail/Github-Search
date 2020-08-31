@@ -12,7 +12,7 @@ This is agular cli powered project that allows the user to input the github user
 
 
 
-This project was generated with [Angular CLI](https://virsail.github.io/My-Angular/) version 8.2.1.
+This project was generated with [Angular CLI]( https://virsail.github.io/Github-Search/) version 8.2.1.
 
 ## Development server
 
