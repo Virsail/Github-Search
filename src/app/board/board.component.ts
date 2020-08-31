@@ -59,12 +59,12 @@
    
    
    
-   public getRepos(event: any) {
+   public getRepos(event ?) {
      this.loading = true;
      // tslint:disable-next-line:prefer-const
      let promise = new Promise((resolve , reject) => {
       this.githubService.getRepos (this.userName).toPromise().then(response => {
-        this.repos = response; this.loading = false; // this will push all data to array [repo]
+        this.repos = response; this.loading = false; 
          resolve();
        },
        error => {
@@ -75,12 +75,12 @@
      });
      return promise;
    }
-   public getUsers(event: any) {
+   public getUsers(event ?) {
      this.loading = true;
      // tslint:disable-next-line:prefer-const
      let promise = new Promise((resolve , reject) => {
       this.profileRequest.getUsers(this.userName).toPromise().then(response => {
-        this.users = response; this.loading = false; // this will push all data to array [repo]
+        this.users = response; this.loading = false; 
          resolve();
        },
        error => {

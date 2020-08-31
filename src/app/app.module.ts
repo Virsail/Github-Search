@@ -12,6 +12,7 @@ import { GithubService } from './github.service';
 import {ProfileRequestService} from './profile-request.service';
 import { RouterModule, Routes } from '@angular/router';
 import { SweetAlertService } from './sweet-alert.service';
+import { UpperCasePipe } from './upper-case.pipe';
 
 const routes: Routes = [
   {path: 'board', component: BoardComponent }
@@ -20,6 +21,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     BoardComponent,
+    UpperCasePipe,
   ],
   imports: [
     BrowserModule,
