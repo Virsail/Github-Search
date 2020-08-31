@@ -1,4 +1,4 @@
-# Quote App Esma Quotes 
+# Github Search Website 
 
 ## Author
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote ,User is able to input a new quote with the author's name ,his name the quote title using the form .on Click of the 'add quote' a new quote created by the user gets displayed in a card-form ,user can create as many quotes as possible ,the quote can be deleted and initially has an upvote and downvote of 0 .On submission of the quote the name of the user gets displayed ,the date of submission and the quote author . Onclick of the 'see more'button floating on the right of the card-form the upvote ,downvote and option to delete quote are displayed.
+This is agular cli application that displays quotes, allow the user to input the github user name and get his profile displayed ,this is enabled using the github api that allowers the website to access user information from github and display public repositories of the user
 
 ## Live Page 
 
