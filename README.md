@@ -6,7 +6,7 @@
 
 ## Description
 
-This is agular cli application that displays quotes, allow the user to input the github user name and get his profile displayed ,this is enabled using the github api that allowers the website to access user information from github and display public repositories of the user
+This is agular cli powered project that allows the user to input the github user name and get his profile displayed ,this is enabled using the github api that allowers the website to access user information from github and display public repositories of the user
 
 ## Live Page 
 
