@@ -13,6 +13,7 @@ import {ProfileRequestService} from './profile-request.service';
 import { RouterModule, Routes } from '@angular/router';
 import { SweetAlertService } from './sweet-alert.service';
 import { UpperCasePipe } from './upper-case.pipe';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 const routes: Routes = [
   {path: 'board', component: BoardComponent }
@@ -22,6 +23,7 @@ const routes: Routes = [
     AppComponent,
     BoardComponent,
     UpperCasePipe,
+    SearchFormComponent,
   ],
   imports: [
     BrowserModule,
